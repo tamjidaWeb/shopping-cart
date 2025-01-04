@@ -9,45 +9,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-<!-- <style>
- .bg-blacl{
-  background-color: #333333;
-  color: #fff;
- } -->
-</style>
-</head>
-<body style="background-color: #212121; color: #ffff; " class="min-h-screen p-4">
- 
 
-      <div class="parent">
-        <div class="day">saturday</div>
-        <div class="day">sunday</div>
-        <div class="day">monday</div>
-        <div class="day">tuesday</div>
-        <div class="day"></div>
-     
-      </div>
-   
 
-  <script>
-    const parent=document.querySelector('.parent');
-    console.log(parent);
-    console.log(parent.children);
-    console.log(parent.children[1].innerHTML);
+<body>
 
-    // for(let i =0; i<parent.children.length;i++){
-    //   console.log(parent.children[i].innerHTML);
-    // }
-    // parent.children[2].style.color='green';
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
-    const dayone = document.querySelector('.day');
-    // console.log(dayone.parentElement)
-    // console.log(dayone.nextElementSibling)
 
-    console.log("NODES:", parent.childNodes);
-    
-
-  </script>
+<div class=" bg-black screen min-h-screen flex items-center justify-center">
+  <div class="center">
+    <div class="text-white" id="banner"><span>Your Local Time</span></div>
+    <div class=" bg-yellow-500 text-center rounded-lg border-2 border-white " id="clock"></div>
+  </div>
+</div>
+  
+<script src="script.js"></script>
 </body>
 </html>

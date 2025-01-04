@@ -104,3 +104,8 @@
     justify-content: center;
    
   }
+
+  .center{
+    background-color: black;
+    color: white;
+  }

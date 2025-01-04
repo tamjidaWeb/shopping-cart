@@ -38,27 +38,53 @@ buttons.forEach(function(button){
 
 
 
-const form = document.querySelector('form');
-form.addEventListener('submit',function(e){
-  e.preventDefault();
-  const height = parseInt(document.querySelector('#height').value)
-  const weight = parseInt(document.querySelector('#weight').value)
-  constresults = document.querySelector('#results');
+// const form = document.querySelector('form');
+// form.addEventListener('submit',function(e){
+//   e.preventDefault();
+//   const height = parseInt(document.querySelector('#height').value)
+//   const weight = parseInt(document.querySelector('#weight').value)
+//   constresults = document.querySelector('#results');
 
-  if(height=== '' || height<0 || isNaN(height)){
-    results.innerHTML = `please enter a valid numberrrrrrrrrrr${height}`;
-  }
-  if(weight=== '' || weight<0 || isNaN(weight)){
-    results.innerHTML = `please enter a valid numberrrrrrrrrrr ${weight}`;
-  }
+//   if(height=== '' || height<0 || isNaN(height)){
+//     results.innerHTML = `please enter a valid numberrrrrrrrrrr${height}`;
+//   }
+//   if(weight=== '' || weight<0 || isNaN(weight)){
+//     results.innerHTML = `please enter a valid numberrrrrrrrrrr ${weight}`;
+//   }
 
-  else{
-    const bmi = (weight/ ((height*height)/10000)).toFixed(2);
-    results.innerHTML= `here is the bmi ${bmi}`;
-  }
-})
+//   else{
+//     const bmi = (weight/ ((height*height)/10000)).toFixed(2);
+//     results.innerHTML= `here is the bmi ${bmi}`;
+//   }
+// })
 
 
+
+// const clock = document.getElementById('clock');
+
+
+// console.log(date.toLocaleTimeString());
+
+
+// setInterval(function(){
+//   let date = new Date();
+//   clock.innerHTML = date.toLocaleTimeString();
+// }, 1000)
+
+
+// const clock = document.getElementById('clock');
+// setInterval(function(){
+//   let date = new Date();
+//   clock.innerHTML = date.toLocaleTimeString();
+
+// }, 1000);
+
+
+const clock = document.getElementById('clock');
+setInterval(function (){
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+},1000);
 
 
 
