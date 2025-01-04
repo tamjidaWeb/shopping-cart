@@ -2,54 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #212121; color: #ffff; " class="min-h-screen p-4">
-    <ul class="language">
-        <li>java</li>
-    </ul>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="flex">
 
+       
+        <form >
+            <p><label > Height in CM:</label><input type="text" id="height"></p>
+            <p><label > Weight in KG:</label><input type="text" id="weight"></p>
+            <button>Calculate</button>
+            <div id="results"></div>
+            <div class="weight-guide">
+                <h3>BMI weight Guide</h3>
+                <p>under weight: less than 18.6</p>
+                <p>Normal Range: 18.6 and 24.9</p>
+                <p>Overweight: More than 24.9</p>
+            </div>
 
-<script>
-
-    function addLanguage(langName){
-        const li=document.createElement('li');
-        li.innerHTML= `${langName}`;
-        document.querySelector('.language').appendChild(li)
-
-    }
-    addLanguage("python")
-    addLanguage("typescript")
-
-
-    function addOptiLanguage(langName){
-       const li= document.createElement('li');
-       li.appendChild(document.createTextNode(langName));
-       document.querySelector('.language').appendChild(li);
-    }
-    addOptiLanguage("golang");
-    const secondLan=document.querySelector("li:nth-child(2)");
-    // secondLan.innerHTML= "mojo"
-    const newLi=document.createElement('li');
-    newLi.textContent = "mojo";
-    secondLan.replaceWith(newLi);
-
-
-    const firstLan = document.querySelector("li:first-child");
-    firstLan.outerHTML= "<li> typescript</li>";
-
-
-
-    // remove
-const lastLan = document.querySelector('li:last-child');
-lastLan.remove()
-
-
-
-
-
-</script>
-    
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
