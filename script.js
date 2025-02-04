@@ -1,16 +1,16 @@
-const buttons = document.querySelectorAll('.button');
-const body=document.querySelector('body');
+// const buttons = document.querySelectorAll('.button');
+// const body=document.querySelector('body');
 
-buttons.forEach(function(button){
-  button.addEventListener('click', function(e){
-    console.log(e);
-    console.log(e.target);
+// buttons.forEach(function(button){
+//   button.addEventListener('click', function(e){
+//     console.log(e);
+//     console.log(e.target);
 
-    if(e.target.id==='gray'){
-      body.style.backgroundColor = e.target.id;
-    }
-  })
-})
+//     if(e.target.id==='gray'){
+//       body.style.backgroundColor = e.target.id;
+//     }
+//   })
+// })
 
 
 
@@ -80,11 +80,11 @@ buttons.forEach(function(button){
 // }, 1000);
 
 
-const clock = document.getElementById('clock');
-setInterval(function (){
-  let date = new Date();
-  clock.innerHTML = date.toLocaleTimeString();
-},1000);
+// const clock = document.getElementById('clock');
+// setInterval(function (){
+//   let date = new Date();
+//   clock.innerHTML = date.toLocaleTimeString();
+// },1000);
 
 
 
